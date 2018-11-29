@@ -176,13 +176,18 @@ body{
 .bottom.game.cell:not(.corner) .player , .top.game.cell:not(.corner) .player{
         width: 40%;
 }
-
+.player1 #player1,.player2 #player2,.player3 #player3,.player4 #player4{ /* Here I user the class to put the smiley face on his own property */
+    background-image:url(../images/smileface.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
 
 .left.game.cell:not(.corner) .player , .right.game.cell:not(.corner) .player{
     height: 40%;
     width: 25%;
 }
-.player.jailed{
+.player.jailed{ /* Here I user the class to put the sad face when on jail */
     background-image:url(../images/sadface.png);
     background-size:contain;
     background-position:center;

@@ -110,7 +110,7 @@ Monopoly.setNextPlayerTurn = function(){
     currentPlayerTurn.removeClass("current-turn");
     var nextPlayer = $(".player#player" + nextPlayerId);
     nextPlayer.addClass("current-turn");
-    if (nextPlayer.is(".jailed")){
+    if (nextPlayer.is(".jailed")){ 
         var currentJailTime = parseInt(nextPlayer.attr("data-jail-time"));
         currentJailTime++;
         nextPlayer.attr("data-jail-time",currentJailTime);
@@ -241,7 +241,7 @@ Monopoly.initPopups = function(){
 Monopoly.handleBuy = function(player,propertyCell,propertyCost){
     var playersMoney = Monopoly.getPlayersMoney(player)
     if (playersMoney < propertyCost){
-        Monopoly.playSound("Gold_Please");
+        Monopoly.playSound("Gold_Please"); // Adding the new sound when player cant buy property
         Monopoly.showErrorMsg();
     }else{
         Monopoly.updatePlayersMoney(player,propertyCost);
