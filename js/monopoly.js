@@ -1,6 +1,6 @@
 var Monopoly = {};
 Monopoly.allowRoll = true;
-Monopoly.moneyAtStart = 1000;
+Monopoly.moneyAtStart = 75; // I give them 75$ to start, globally the same proportion of the real monopoly
 Monopoly.doubleCounter = 0;
 
 Monopoly.init = function(){
