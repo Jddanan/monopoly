@@ -182,7 +182,12 @@ body{
     height: 40%;
     width: 25%;
 }
-
+.player.jailed{
+    background-image:url(../images/sadface.png);
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
 .player#player1 , .player1.cell .content {
     background-color: #389c36;
 }
