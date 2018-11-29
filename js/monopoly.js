@@ -319,10 +319,7 @@ Monopoly.isValidInput = function(validate,value){
             if(value > 1 && value <= 4){
                 isValid = true;
             }
-            //TODO: remove when done
-            console.log("the val " + value)
-            isValid = true;
-            break;
+            break; // needed to remove the isValid and leave only break
     }
 
     if (!isValid){
