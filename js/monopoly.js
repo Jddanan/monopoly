@@ -241,6 +241,7 @@ Monopoly.initPopups = function(){
 Monopoly.handleBuy = function(player,propertyCell,propertyCost){
     var playersMoney = Monopoly.getPlayersMoney(player)
     if (playersMoney < propertyCost){
+        Monopoly.playSound("Gold_Please");
         Monopoly.showErrorMsg();
     }else{
         Monopoly.updatePlayersMoney(player,propertyCost);
