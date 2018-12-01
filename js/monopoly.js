@@ -325,7 +325,7 @@ Monopoly.getNextCell = function(cell){
 // function that will give money for each player that pass the GO cell
 Monopoly.handlePassedGo = function(){
     var player = Monopoly.getCurrentPlayer();
-    Monopoly.updatePlayersMoney(player,-Monopoly.moneyAtStart/10);
+    Monopoly.updatePlayersMoney(player,-Monopoly.moneyAtStart/10); //the function updateplayermoney remove money by default so we need to add a -
 };
 
 // checking if the amount of player is correct
@@ -333,7 +333,7 @@ Monopoly.isValidInput = function(validate,value){
     var isValid = false;
     switch(validate){
         case "numofplayers":
-            if(value > 1 && value <= 4){
+            if(value > 1 && value <= 6){
                 isValid = true;
             }
             break; // needed to remove the isValid and leave only break

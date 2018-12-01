@@ -176,7 +176,7 @@ body{
 .bottom.game.cell:not(.corner) .player , .top.game.cell:not(.corner) .player{
         width: 40%;
 }
-.player1 #player1,.player2 #player2,.player3 #player3,.player4 #player4{ /* Here I user the class to put the smiley face on his own property */
+.player1 #player1,.player2 #player2,.player3 #player3,.player4 #player4,.player5 #player5,.player6 #player6{ /* Here I user the class to put the smiley face on his own property */
     background-image:url(../images/smileface.png);
     background-size:contain;
     background-position:center;
@@ -208,6 +208,12 @@ body{
 .player#player4 , .player4.cell .content{
     background-color: #d061cd;
 }
+.player#player5 , .player5.cell .content{
+    background-color: red;
+}
+.player#player6 , .player6.cell .content{
+    background-color: aqua;
+}
 
 .player.current-turn{
     background-image:url(../images/crown.png);
@@ -224,7 +230,7 @@ body{
     width: 25%;
     height: 25%;
     margin: 4%;
-    background-color: #364c9c;
+    background-color: #364c9c; /* Changing color of dice dot */
     border-radius: 100px;
     opacity:0;
 }
