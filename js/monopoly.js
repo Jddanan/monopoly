@@ -325,7 +325,7 @@ Monopoly.getNextCell = function(cell){
 // function that will give money for each player that pass the GO cell
 Monopoly.handlePassedGo = function(){
     var player = Monopoly.getCurrentPlayer();
-    Monopoly.updatePlayersMoney(player,Monopoly.moneyAtStart/10);
+    Monopoly.updatePlayersMoney(player,-Monopoly.moneyAtStart/10);
 };
 
 // checking if the amount of player is correct
