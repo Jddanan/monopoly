@@ -238,3 +238,7 @@ body{
 .dice-dot.right{
     margin-left:36%;
 }
+
+.broke{
+    display: none;
+  }
